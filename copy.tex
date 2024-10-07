@@ -1,0 +1,138 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[style=ieee, sorting=nyt, backend=biber]{biblatex}
+% \usepackage[style=apa, sorting=nyt, backend=biber]{biblatex}
+% \DeclareLanguageMapping{english}{english-apa}  % For English language documents
+\addbibresource{Exported Items.bib}  % your .bib file containing references
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={BPI Data Wave},
+    citecolor=cyan
+}
+
+\urlstyle{same}
+
+
+\usepackage[margin=1in]{geometry}  %For centering solution box
+\usepackage{titlesec}
+\titleformat{\section}
+  {\normalfont\normalsize\bfseries} % \bfseries makes the section title bold
+  {\thesection}{1em}{}
+
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries} % Same size as body text
+  {\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries} % Same size as body text
+  {\thesubsubsection}{1em}{}
+
+% \chead{\hline} % Un-comment to draw line below header
+
+\thispagestyle{empty}   %For removing header/footer from page 1
+
+\parindent 0cm
+
+\title{\vspace{0cm} % Move title up a bit
+    \hrule height 1.5mm % Top thick line
+    \vspace{1cm}
+    \textbf{\LARGE Our Wonderful Title for our Generative AI Solution for supporting MSMEs}
+    \vspace{1cm}
+    \hrule height 0.5mm % Bottom thin line
+}
+
+\author{
+    \text{Chris Andrei Irag} \hspace{0.5cm} 
+    \text{Frency Rayne Montesclaros} \hspace{0.5cm}  \vspace{0.3cm}
+    \text{Genheylou Felisilda} \\  \vspace{0.5cm}
+    \text{Kein Jake Culanggo} \hspace{2cm}
+    \text{Keith Laspoña} \\ 
+    \vspace{0.2cm}
+    University of Science and Technology of Southern Philippines
+}
+
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract} 
+    \noindent
+   Because on-line search databases typically contain only abstracts, it is vital to write a complete but concise description of your work to entice potential readers into obtaining a copy of the full paper. This article describes how to write a good computer architecture abstract for both conference and journal papers. Writers should follow a checklist consisting of: motivation, problem statement, approach, results, and conclusions. Following this checklist should increase the chance of people taking the time to obtain and read your complete paper.
+
+\end{abstract}
+\vspace{0.5cm}
+\textbf{Keywords:} MSMEs, Finance, Business, Generative AI
+
+
+
+
+\section{Introduction}
+
+\textbf{Micro, Small, and Medium Enterprises} \\
+From 2015 to 2022, Micro, Small, and Medium Enterprises (MSMEs) have consistently accounted for 99.6\% of the total number of businesses in the Philippines \parencite{department_of_trade_and_industry_philippines_msme_2022, ibarra_accounting_2015} and contribute to 40\% of the GDP \parencite{united_nations_development_program_msme_2020}, of which 90.49\% are considered Micro enterprises. MSMEs stimulate the economy by generating 65.10\% jobs of the Philippine's total employment. 67\% of MSMEs operate in the wholesale and retail trade, motor vehicle repair, and financial and insurance industries \parencite{philippine_statistics_authority_2018_2018}.
+
+\begin{figure}[h!]
+\centering
+\def\arraystretch{1.5}
+\begin{tabular}{|c||c|c|}
+\hline
+Enterprise Type & By Value (PHP) & By Number of Employees \\ \hline
+Micro & Up to ₱3,000,000 & 1 - 9 \\ \hline
+Small & ₱3,000,001 - ₱15,000,000 & 10 - 99 \\ \hline
+Medium & ₱15,000,001 - ₱100,000,000, & 100 - 199 \\
+\hline
+\end{tabular}
+\caption{MSME Classification}
+\label{fig:MSME Classification}
+\end{figure}
+
+As shown in Figure \ref{fig:MSME Classification}, the classification of MSMEs depend on either of the following criteria: (1) The enterprise's total asset value in Philippine Pesos (PHP)  not including where the land of which the particular enterprise is situated in \parencite{republic_of_the_philippines_magna_2008}; (2) The number of employees an enterprise currently employs \parencite{senate_economic_planning_office_msme_2012}.\\
+
+MSMEs tend to rely on informal sources of business capital, such as personal savings and borrowing from relatives, when starting their business \parencite{almeda_micro_2012}, despite being aware of formal financing options and possessing a decent level of financial knowledge \parencite{ibarra_accounting_2015}. This is largely due to the unfavorable business environment, which affects the entry, survival, and growth of MSMEs, with economic factors such as limited access to formal financing options, inflation, and high taxes playing significant roles \parencite{duran_common_2024} \parencite{senate_economic_planning_office_msme_2012}. \\
+
+\textbf{Generative AI} \\
+Generative AI success in the financial sector, which were previously powered by machine learning and other solutions.
+
+
+\subsection{Problem Statement}
+Describe the Job-to-be-Done that your solution is addressing.
+(Provide a brief description of the problem your project addresses, based on the selected track's problem statements.)
+
+
+\subsection{Our Solution Here}
+(Describe your solution, including how it works and its key features.)
+(Explain what makes your solution unique and how it empowers MSMEs, promotes fairness, or inspires action.)
+
+\section{Related Work}
+Solutions that are good.. but not quite good for our problem. Cite some other work that people have done. Why are their successes good, where do they lack?
+
+
+\section{Implementation Plan}
+\subsection{Target Audience}
+(Identify the primary users of your solution and describe their characteristics.)
+\subsection{Key Metrics for Success}
+(List the metrics you will use to measure the success of your project. Consider factors like user engagement, financial impact, or social outcomes.)
+
+\section{The Name of our Tech}
+\subsection{Technology Stack}
+(List the technologies, tools, and platforms you will use for your project.)
+\subsection{Data Requirements}
+(Describe any data you need for your project, including sources and how you plan to collect or access it.)
+
+\subsection{Challenges and Risks}
+Innovation in technology, particularly Generative AI is currently innovating at a rapid pace \parencite{weisz_design_2024}. Biases in the model being used. Risk of leaking sensitive business information or customer data.
+
+\section{Conclusion}
+This proposal fixes the problem statement. We formulated our solution by doing this. We believe this is good and the effects and consequences of this technology is does this thing.
+
+
+\printbibliography
+
+\end{document}
