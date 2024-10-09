@@ -1,15 +1,18 @@
 \documentclass{article}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{xcolor}
+
 \usepackage[style=ieee, sorting=nyt, backend=biber]{biblatex}
 % \usepackage[style=apa, sorting=nyt, backend=biber]{biblatex}
 % \DeclareLanguageMapping{english}{english-apa}  % For English language documents
 \addbibresource{Exported Items.bib}  % your .bib file containing references
 \usepackage{hyperref}
 
+\definecolor{mycolor1}{HTML}{ba3132} 
 \hypersetup{
     colorlinks=true,
-    linkcolor=blue,
+    linkcolor=mycolor1,
     filecolor=magenta,      
     urlcolor=cyan,
     pdftitle={BPI Data Wave},
@@ -68,37 +71,46 @@
 
 \end{abstract}
 \vspace{0.5cm}
-\textbf{Keywords:} MSMEs, Finance, Business, Generative AI
+\textbf{Keywords:} MSMEs, Finance, Business, Generative AI, Philippines
 
 
 
 
 \section{Introduction}
 
-\textbf{Micro, Small, and Medium Enterprises} \\
-From 2015 to 2022, Micro, Small, and Medium Enterprises (MSMEs) have consistently accounted for 99.6\% of the total number of businesses in the Philippines \parencite{department_of_trade_and_industry_philippines_msme_2022, ibarra_accounting_2015} and contribute to 40\% of the GDP \parencite{united_nations_development_program_msme_2020}, of which 90.49\% are considered Micro enterprises. MSMEs stimulate the economy by generating 65.10\% jobs of the Philippine's total employment. 67\% of MSMEs operate in the wholesale and retail trade, motor vehicle repair, and financial and insurance industries \parencite{philippine_statistics_authority_2018_2018}.
+% \textbf{Micro, Small, and Medium Enterprises} \\
+From 2015 to 2022, Micro, Small, and Medium Enterprises (MSMEs) have consistently accounted for 99.6\% of the total number of businesses in the Philippines \parencite{department_of_trade_and_industry_philippines_msme_2022, ibarra_accounting_2015} and contribute to 40\% of the GDP \parencite{united_nations_development_program_msme_2020}, of which 90.49\% are considered Micro enterprises. MSMEs stimulate the economy by generating 65.10\% jobs of the Philippine's total employment. 76\% of MSMEs operate in the following industries: (1) wholesale and retail trade; motor vehicle repair, (2) accommodation and food services, (3) financial and insurance industries, and (4) manufacturing \parencite{philippine_statistics_authority_2018_2018}. \\
 
-\begin{figure}[h!]
-\centering
-\def\arraystretch{1.5}
-\begin{tabular}{|c||c|c|}
-\hline
-Enterprise Type & By Value (PHP) & By Number of Employees \\ \hline
-Micro & Up to ₱3,000,000 & 1 - 9 \\ \hline
-Small & ₱3,000,001 - ₱15,000,000 & 10 - 99 \\ \hline
-Medium & ₱15,000,001 - ₱100,000,000, & 100 - 199 \\
-\hline
-\end{tabular}
-\caption{MSME Classification}
-\label{fig:MSME Classification}
-\end{figure}
 
-As shown in Figure \ref{fig:MSME Classification}, the classification of MSMEs depend on either of the following criteria: (1) The enterprise's total asset value in Philippine Pesos (PHP)  not including where the land of which the particular enterprise is situated in \parencite{republic_of_the_philippines_magna_2008}; (2) The number of employees an enterprise currently employs \parencite{senate_economic_planning_office_msme_2012}.\\
+% \begin{figure}[h!]
+% \centering
+%     \def\arraystretch{1.5}
+%         \begin{tabular}{|c||c|c|}
+%             \hline
+%             Enterprise Type & By Value (PHP) & By Number of Employees \\ \hline
+%             Micro & Up to ₱3,000,000 & 1 - 9 \\ \hline
+%             Small & ₱3,000,001 - ₱15,000,000 & 10 - 99 \\ \hline
+%             Medium & ₱15,000,001 - ₱100,000,000, & 100 - 199 \\
+%             \hline
+%         \end{tabular}
+%     \caption{MSME Classification}
+% \label{fig:MSME Classification}
+% \end{figure}
 
-MSMEs tend to rely on informal sources of business capital, such as personal savings and borrowing from relatives, when starting their business \parencite{almeda_micro_2012}, despite being aware of formal financing options and possessing a decent level of financial knowledge \parencite{ibarra_accounting_2015}. This is largely due to the unfavorable business environment, which affects the entry, survival, and growth of MSMEs, with economic factors such as limited access to formal financing options, inflation, and high taxes playing significant roles \parencite{duran_common_2024} \parencite{senate_economic_planning_office_msme_2012}. \\
+% As shown in Fig. \ref{fig:MSME Classification}, the classification of MSMEs depend on either of the following criteria: (1) The enterprise's total asset value in Philippine Pesos (PHP)  not including where the land of which the particular enterprise is situated in \parencite{republic_of_the_philippines_magna_2008}; (2) The number of employees an enterprise currently employs \parencite{senate_economic_planning_office_msme_2012}.\\
+
+Moreover, MSMEs face multiple challenges. They tend to rely on informal sources of business capital, such as personal savings and borrowing from relatives, when starting their business \parencite{almeda_micro_2012}, despite being aware of formal financing options and possessing a decent level of financial knowledge \parencite{ibarra_accounting_2015}. This is largely due to the unfavorable business environment, which affects the entry, survival, and growth of MSMEs, with economic factors such as limited access to formal financing options, inflation, and high taxes playing significant roles \parencite{duran_common_2024} \parencite{senate_economic_planning_office_msme_2012}. \\ 
+
+
+\textbf{Innovation in MSMEs} \\
+Despite the existing unfavorable business environment, research highlights the importance of innovation and the adoption of technologies like AI to improve productivity \parencite{duran_common_2024}. As mentioned before, limited access to formal financing options hampers business growth, it has also been shown that this challenge correlates with SMEs' incentive to innovate and adopt productivity-enhancing technologies \parencite{lim_innovation_2022}. In contrast, Micro enterprises often maintain a mindset of contentment with their current business and see little need to innovate, improve, or graduate to the small or higher enterprise category. Contributing factors to this mindset include, but are not limited to: (a) low skill levels, (b) limited education, (c) confidence in their niche product but lack of knowledge about the broader market, and (d) the ease of entry and exit in the market \parencite{rahmawati_analysis_2015}.\\ 
+
+
 
 \textbf{Generative AI} \\
-Generative AI success in the financial sector, which were previously powered by machine learning and other solutions.
+Generative AI currently produces content such as text and images, and it is also capable of generating videos from images. The use of generative AI in audio production is gaining traction, with applications ranging from creating humorous music to general content creation \parencite{dong_generative_2024} \parencite{chui_generative_2022}. In the business sector, the rise of generative AI has led to significant improvements in areas such as customer support, risk management, legal processes, marketing, sales, general assistance, IT/engineering, and human-robot interactions, with tools like ChatGPT garnering the most attention \parencite{chui_generative_2022} \parencite{brynjolfsson_generative_2023}. So far, most business applications of Generative AI have focused on documentation and question-and-answer systems. \\
+
+Outside of generative AI, solutions like machine learning dominate fields that involve numerical data. These technologies are used in prediction models such as forecasting, dynamic pricing, anomaly or fraud detection, recommendation systems, and general decision-making. It doesn't stop there, applications of Artificial Intelligence is multi-faceted, and the field is full innovation and will likely stay that way for quite some time \parencite{bharadiya_machine_2023} \parencite{kaggwa_ai_2024} \parencite{oyekunle_digital_2024}.
 
 
 \subsection{Problem Statement}
